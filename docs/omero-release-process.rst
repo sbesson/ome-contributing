@@ -110,6 +110,5 @@ Both the `master` branch as well as the tag must be pushed upstream::
 
 An hourly cron job runs on our virtual machine and deploys the website.
 
-Finally 
- - Add an entry in https://docs.google.com/spreadsheets/d/1K7ab1UpuiE3FmAq3et7OpyxFwumrT7z8tGrDDBSDxsk/edit#gid=908994883
- - Announce the release on `image.sc <https://forum.image.sc/>`_ using the ``Announcements`` category after checking that the website has been deployed.
+Finally, announce the release on `image.sc <https://forum.image.sc/>`_ using the
+`Announcements <https://forum.image.sc/c/announcements/10>`_ category after checking that the website has been deployed.
