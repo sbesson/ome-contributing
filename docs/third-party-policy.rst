@@ -111,7 +111,20 @@ All individual code contributors are expected to fill and return the
 :doc:`OME Contributor License Agreement <cla>`. The agreement is between OME,
 represented by the University of Dundee, and the copyright owner or the legal
 entity authorized by the copyright owner and is valid for all contributions
-across all OME repositories.
+across all OME repositories. OME requires a Contributor License Agreement
+independent of how the contributed code was created; there are no
+exceptions for code written in whole or in part with the use of an LLM
+or other automated tool.
+
+All code contributions, regardless of how they are created, are subject to
+a review process by one or more members of the OME team. Successful contributors
+in all cases are expected to:
+
+- describe the proposed changes, and why they are necessary
+- answer questions from the reviewers, which may include but are not limited to
+  questions about technical choices, relevant test cases, and impacts on existing
+  functionality
+- modify contributions, if necessary and appropriate, to address review comments
 
 Proprietary Native Code Blobs
 -----------------------------
@@ -122,3 +135,13 @@ and support responsibility for any such native code blob remains entirely with
 the contributor. OME will direct support issues it receives to the contributor
 publicly and any current or future compatibility testing with the native code
 blob with OME software is performed on a best effort basis.
+
+Exporting Proprietary Formats
+-----------------------------
+
+OME is not able to accept contributions that include saving or exporting to formats
+that do not have an open specification. This includes most of the file formats for which
+reading is supported. Contributions that enable writing proprietary compression types for
+which no open source implementation is available are also unacceptable, as is support for
+writing compression types which may have an open source implementation but no defined standard
+for how to use this within the relevant file format.
