@@ -14,7 +14,7 @@ Before starting the release process:
 - follow the steps of the :doc:`security-process` if the release fixes a security vulnerability
 - make sure GitHub actions are active on the Bio-Formats repositories
 - open a Pull Request against the `Bio-Formats Documentation`_ with a new release entry in the `whats-new <https://github.com/ome/bio-formats-documentation/blob/master/sphinx/about/whats-new.rst>`_ page
-- if any new reader or writer options were added, open a pull request is opened to update `the options page <https://github.com/ome/bio-formats-documentation/blob/master/sphinx/formats/options.rst>`_ and relevant `format page entries <https://github.com/ome/bio-formats-documentation/blob/master/src/main/resources/format-pages.txt>`_
+- if any new reader or writer options were added, open a pull request to update `the options page <https://github.com/ome/bio-formats-documentation/blob/master/sphinx/formats/options.rst>`_ and relevant `format page entries <https://github.com/ome/bio-formats-documentation/blob/master/src/main/resources/format-pages.txt>`_
 - if any new readers or writers were added, open a pull request to add them to the `list of supported formats <https://github.com/ome/bio-formats-documentation/blob/master/src/main/resources/format-pages.txt>`_
 
 When all changes are approved by both the OME team and the Glencoe Software team, merge documentation pull requests and start the release process.
