@@ -10,13 +10,6 @@ OMERO.server release
 This document describes the release process for OMERO_ server.
 The release process uses GitHub actions, make sure that the actions are active before pushing any tag.
 
-Register CVE
-^^^^^^^^^^^^
-
-As soon as a vulnerability is identified, create a security advisory on `GitHub <https://github.com/ome/openmicroscopy/security/advisories>`_.
-The work to fix the vulnerability will be done using the private copy of `ome/openmicroscopy <https://github.com/ome/openmicroscopy/>`_ and the private copies of the Java components.
-The release process needs to be adjusted in that case.
-
 Release process
 ^^^^^^^^^^^^^^^
 
