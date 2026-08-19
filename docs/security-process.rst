@@ -1,7 +1,11 @@
 Security process
 ================
 
-OME makes extensive use of GitHub for managing vulnerability reports and fixes - see
+This document describes the security process for OME maintainers. The process for
+reporting a security vulnerability is described in the
+`security page <https://www.openmicroscopy.org/security/>`_ of the OME website.
+This process makes extensive use of GitHub functionalities for managing vulnerability
+reports and fixes - see
 https://docs.github.com/en/code-security/how-tos/report-and-fix-vulnerabilities.
 
 Create draft advisory
