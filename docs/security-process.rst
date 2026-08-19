@@ -1,7 +1,7 @@
 Security process
 ================
 
-OME makes extensive use of GitHub  for managing vulnerability reports and fixes - see
+OME makes extensive use of GitHub for managing vulnerability reports and fixes - see
 https://docs.github.com/en/code-security/how-tos/report-and-fix-vulnerabilities.
 
 Create draft advisory
@@ -40,7 +40,7 @@ Announce the security release
 
 Once a fix has been identified, a pre-announcement of the upcoming security release
 should be made on the image.sc forum including at least the `ome` and `security` tags.
-The delay between the publication pre-announcement and the security release  may vary
+The delay between the publication pre-announcement and the security release may vary
 depending on a number of factors. For OMERO security releases, sufficient notice should
 be given to system administrators to plan and schedule a downtime and upgrade.
 
@@ -59,7 +59,7 @@ Prior to its publication, the content advisory should be updated with:
 Publish the advisory
 ^^^^^^^^^^^^^^^^^^^^
 
-On release data, all open Pull Requests against the temporary fork should be merged
+On release day, all open Pull Requests against the temporary fork should be merged
 in the security advisory - see https://docs.github.com/en/code-security/tutorials/fix-reported-vulnerabilities/collaborate-in-a-fork#merging-changes-in-a-security-advisory
 Once merged, all changes will be visible on the public repository.
 
@@ -67,6 +67,6 @@ The release process can then follow the standard procedures with the following v
 
 - the GitHub advisory should be published as described in
   https://docs.github.com/en/code-security/how-tos/report-and-fix-vulnerabilities/fix-reported-vulnerabilities/publish-repository-advisory.
-- i naddition to the release announcement, the GitHub advisory should be duplicated to the
+- in addition to the release announcement, the GitHub advisory should be duplicated to the
   `list of advisories <https://www.openmicroscopy.org/security/advisories/>`_ on the OME website.
 
