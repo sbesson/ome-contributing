@@ -8,10 +8,11 @@ OMERO.server release
 .. _Read The Docs: https://readthedocs.org/projects/omero/builds/
 
 This document describes the release process for OMERO_ server.
-The release process uses GitHub actions, make sure that the actions are active before pushing any tag.
 
-Release process
-^^^^^^^^^^^^^^^
+Before starting the release process:
+
+- follow the steps of the :doc:`security-process` if the release fixes a security vulnerability
+- make sure GitHub actions are active on the OMERO.server repositories
 
 Source code release
 -------------------
@@ -103,5 +104,9 @@ Both the `master` branch as well as the tag must be pushed upstream::
 
 An hourly cron job runs on our virtual machine and deploys the website.
 
-Finally, announce the release on `image.sc <https://forum.image.sc/>`_ using the
-`Announcements <https://forum.image.sc/c/announcements/10>`_ category after checking that the website has been deployed.
+Announcement
+------------
+
+Announce the release on `image.sc`_ using the
+`Announcements <https://forum.image.sc/c/announcements/10>`_ category after
+checking that the website has been deployed.
