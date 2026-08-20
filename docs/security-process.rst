@@ -11,7 +11,7 @@ https://docs.github.com/en/code-security/how-tos/report-and-fix-vulnerabilities.
 Create draft advisory
 ^^^^^^^^^^^^^^^^^^^^^
 
-Once a vulnerability is [reported](https://www.openmicroscopy.org/security/) through
+Once a vulnerability is `reported <https://www.openmicroscopy.org/security/>`_ through
 the security mailing list, an administrator should draft a security advisory
 against the appropriate GitHub repository e.g.
 https://github.com/ome/omero-web/security/advisories. This advisory can be used for
