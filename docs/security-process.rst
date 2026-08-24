@@ -1,57 +1,72 @@
 Security process
 ================
 
-This document describes the security process for OME maintainers. The process for
-reporting a security vulnerability is described in the
-`security page <https://www.openmicroscopy.org/security/>`_ of the OME website.
-This process makes extensive use of GitHub functionalities for managing vulnerability
-reports and fixes - see
-https://docs.github.com/en/code-security/how-tos/report-and-fix-vulnerabilities.
+This document describes OME security process and covers the steps from the
+reception of a vulnerability report up to the security release of a component.
+The development process makes extensive use of GitHub functionalities for
+managing vulnerability reports and fixes - see
+https://docs.github.com/en/code-security/how-tos/report-and-fix-vulnerabilities
+for more details.
 
-Create draft advisory
-^^^^^^^^^^^^^^^^^^^^^
+Triage security reports
+^^^^^^^^^^^^^^^^^^^^^^^
 
-Once a vulnerability is `reported <https://www.openmicroscopy.org/security/>`_ through
-the security mailing list, an administrator should draft a security advisory
-against the appropriate GitHub repository e.g.
-https://github.com/ome/omero-web/security/advisories. This advisory can be used for
-private discussions about the report and the fix. Comments on an advisory will not
-be available publicly but will remain available to the project maintainers.
+Vulnerabilities can be reported by the community via the security mailing list
+as described in the `security page <https://www.openmicroscopy.org/security/>`_
+of the OME website.
 
-The vulnerability report should first be reviewed by the project maintainers, acknowledging
-its receipt to the report and engaging for additional information as necessary.
+An email received through the security mailing list should be acknowledged
+within 1 working day of its reception. First, the report should be reviewed
+by the relevant project maintainers to validate whether it qualifies as
+a security issue. The email thread can be used to gather additional information
+from the reporter as necessary.
 
-If the reported problem is not identified as a security risk and a draft advisory has
-been created, it must be closed with a comment explaining why it is not considered.
+Once a decision on the nature of the report has been made, it should be
+communicated to the report alongside a mitigation timeline, if applicable.
+
+Create a draft advisory
+^^^^^^^^^^^^^^^^^^^^^^^
+
+Once a vulnerability has been identified, either internally or from an external
+report, an administrator should draft a security advisory against the appropriate
+GitHub repository e.g. https://github.com/ome/omero-web/security/advisories.
+This advisory can be used for all private discussions about the issue. Comments on
+an advisory are not published and remain available to the project maintainers.
 
 Fix a reported vulnerability
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If the problem has been identified as a security risk, a temporary private fork of
-the relevant repository should be created from the draft advisory, see
+To work securely on the development of a security fix, a temporary private fork
+of the repository should be created from the draft advisory as described in
 https://docs.github.com/en/code-security/tutorials/fix-reported-vulnerabilities/collaborate-in-a-fork/.
 
-Collaborators can be added and removed from the private fork as described in 
+Collaborators can be added and removed to/from the private fork as described in 
 https://docs.github.com/en/code-security/how-tos/report-and-fix-vulnerabilities/fix-reported-vulnerabilities/add-collaborators
-and https://docs.github.com/en/code-security/how-tos/report-and-fix-vulnerabilities/fix-reported-vulnerabilities/remove-collaborators
-as necessary.
+and https://docs.github.com/en/code-security/how-tos/report-and-fix-vulnerabilities/fix-reported-vulnerabilities/remove-collaborators.
 
-The development and review process can then proceed as usual using pull requests
-against the private fork.
+The development and review process should proceed as usual using pull requests
+against the private fork. Importantly, PRs must not be merged until the
+component is ready to release.
 
-Announce the security release
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Schedule and pre-announce the security release
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Once a fix has been identified, a pre-announcement of the upcoming security release
-should be made on the image.sc forum including at least the `ome` and `security` tags.
-The delay between the publication pre-announcement and the security release may vary
-depending on a number of factors. For OMERO security releases, sufficient notice should
-be given to system administrators to plan and schedule a downtime and upgrade.
+Once a solution has been identified, a timeline for a security release of the
+component should be decided by the maintainers. For OMERO security releases,
+sufficient notice should be given to system administrators to plan and schedule
+downtime for the upgrade.
+
+The security release should be pre-announced via a post on the `image.sc`_
+forum under the `Announcements <https://forum.image.sc/c/announcements/10>`_
+category including at least the `ome` and `security` tags. The main page of the
+OME website should be updated with a banner announcement linking to the
+`image.sc`_ post.
 
 Prepare the advisory
 ^^^^^^^^^^^^^^^^^^^^
 
-Prior to its publication, the content advisory should be updated with:
+Prior to its publication, the content of the advisory should be updated with
+the following information:
 
 - the package, affected versions and patched versions
 - a description including Background, Impact, Workaround and Resolution
@@ -73,4 +88,3 @@ The release process can then follow the standard procedures with the following v
   https://docs.github.com/en/code-security/how-tos/report-and-fix-vulnerabilities/fix-reported-vulnerabilities/publish-repository-advisory.
 - in addition to the release announcement, the GitHub advisory should be duplicated to the
   `list of advisories <https://www.openmicroscopy.org/security/advisories/>`_ on the OME website.
-
